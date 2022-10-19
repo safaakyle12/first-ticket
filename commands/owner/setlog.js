@@ -22,15 +22,19 @@ module.exports = {
      * @param {String[]} args
      */
 
-    run: async (client, message) => {
+    run: async (client, message, args) => {
         //let args = message.content.split(" ");
 
         let channel = message.mentions.channels.first();
-  
-      // if (channel.length) return message.channel.send(`Please Mention the channel first`);
+
+       if (!channel) return;
+        //message.channel.send(`Please Mention the channel first`);
+    
 
   
-  await db.set(`channel_${message.guild.id}_log`, channel.id);
+  await db.set(`channel_${message.guild.id}_log`, channel?.id);
    message.channel.send(`Channel is setup as <#${channel.id}>`)
-        }
+
+
+    }
         }
