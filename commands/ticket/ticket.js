@@ -31,13 +31,13 @@ module.exports = {
         const OpenTicket = new MessageEmbed()
         .setColor("DARK_BLUE")
         .setDescription(text)
-        .setImage(image)
+        .setImage(image || null)
 
         const row = new MessageActionRow()
         .addComponents(
             new MessageButton()
             .setCustomId("ticket-open")
-            .setEmoji('1015078288475050094')
+            .setEmoji('1029791300314206308')
             .setStyle('PRIMARY')
          )
          message.channel.send({embeds: [OpenTicket], components: [row], ephemeral: true})
