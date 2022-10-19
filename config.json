@@ -1,9 +1,9 @@
 {
-    "token": "OTcyNjk3NDc3NDkwODM1NDk3.GKdwVV.CJ3uNLWpF2X9kIOe0UtwV4P0jpBGWtX4kZ7aMg",
+    "token": "OTcwNjAzNTAxNjEwNzU4MTQ0.GfIQiE.4wVr3rsHBKerriw78T-nVLuIigr0Eptfpvj1yc",
     "ownerID": "699536220681666570",
     "prefix": ".",
     "mongooseConnectionString": "mongodb+srv://wadi3:pmHtN9btW5Tcxeo7@cluster0.ac5di.mongodb.net/bot",
 
-    "image": "",
+    "image": "https://cdn.discordapp.com/attachments/1004058034126999562/1032365419543142470/bo334ts2-1.png",
     "image2":"https://cdn.discordapp.com/attachments/715207341007699988/1015085488509554708/-.png"
 }
