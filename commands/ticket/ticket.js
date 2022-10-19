@@ -27,7 +27,8 @@ module.exports = {
     run: async (client, message, args) => {
         
         message.delete()
-        const text = await db.get(`textTiketCreate_${message.guild.id}`)
+         const text = await db.get(`textTiketCreate_${message.guild.id}`) || "لفتح التكت اظغط الزر"
+      
         const OpenTicket = new MessageEmbed()
         .setColor("DARK_BLUE")
         .setDescription(text)
